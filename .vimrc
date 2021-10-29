@@ -17,14 +17,13 @@ set expandtab
 set guifont=Monaco:h16
 set background=dark
 colorscheme monokai
-set rnu
 set nu
 set linebreak
 set scrolloff=1
 set laststatus=2
 
 " Key mapping
-inoremap jj <Esc>
+let mapleader = ";"
 
 " Custom syntax colouring
 autocmd BufNewFile,BufRead *.geojson set syntax=json
@@ -44,6 +43,7 @@ filetype plugin indent on   " re-enable file-type
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-surround'
+Plugin 'easymotion/vim-easymotion'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
